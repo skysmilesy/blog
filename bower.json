@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "description": "",
+  "main": "",
+  "authors": [
+    "sunnygood <sysunny061112@126.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/skysmilesy/blog",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

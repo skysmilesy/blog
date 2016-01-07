@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% include include/header.ejs %>
+<div class="container">
+  <%
+    for(var i=0;i<articles.length;i++){
+      var article = articles[i];
+  %>
+  <div class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="..." alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><%= article.title %></h4>
+      <p><%= article.content %> </p>
+    </div>
+  </div>
+
+<%
+}
+  %>
+</div>
+<% include include/footer.ejs %>
